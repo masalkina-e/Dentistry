@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --primary-color: 
+}
+
+html {
+    --offset: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.inner-container {
+    max-width: 1024px;
+    margin: 0 auto; 
+}
+
+header {
+    background-color: #0284C7;
+}
+
+.header-flex {
+    padding: 15px 0;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: calc(100%/2);
+}
+
+nav {
+    width: calc(100%/2);
+    gap: 1px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    width: calc(100%/5);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title-text {
+    font-size: 26px;
+    font-weight: 700;  
+}
+
+.hero {
+    background-image: url(picture/hero.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    max-width: calc(100%/2);
+    padding: 150px 0 50px;
+}
+
+.hero-text {
+    max-width: calc(100%/2);
+    font-size: 16px;
+    font-weight: 400;
+    color: #0C4A6E;
+}
+
+span {
+    color: #0284C7;
+}
+
+.submit {
+    height: 51.69px;
+    width: 242.93px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F0F9FF;
+    background-color: #0284C7;
+    border: none;
+    border-radius: 8px;
+    margin: 50px 0;
+    padding: 16px 32px;
+    box-shadow: 2px 2px 5px #737373;
+}
+
+.our-servise {
+    padding: 70px 0;
+}
+
+h2 {
+    color: #0369A1;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.our-servis-scroll-container {
+    background-color: #0284C7;
+    margin-top: 60px;
+}
+
+.icon-arrow {
+    height: 80px;
+    width: 50px;
+    font-size: 40px;
+}
+
+.our-servise-flex {
+    padding: 60px 0 30px;
+    gap: 10px;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+
+    
+}
+
+.our-servis-items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: white;
+}
+
+.servis-dental {
+    background-image: url(picture/service-1.png);
+    width: calc(100%/3 - 60px);
+    height: 150px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 20px;
+    margin: 20px 30px;
+    box-shadow: 2px 2px 4px #404040;
+    background-color: #f0f9ff;
+    background-blend-mode: multiply;
+}
+
+.servis-prosthetics {
+    background-image: url(picture/service-2.png);
+    width: calc(100%/3 - 60px);
+    height: 150px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 20px;
+    margin: 20px 30px;
+    box-shadow: 2px 2px 4px #404040;
+    background-color: #f0f9ff;
+    background-blend-mode: multiply;
+
+}
+
+.servis-cleaning {
+    background-image: url(picture/service-3.png);
+    width: calc(100%/3 - 60px);
+    height: 150px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 20px;
+    margin: 20px 30px;
+    box-shadow: 2px 2px 4px #404040;
+    background: linear-gradient(to left, #e0f2fe25 20%,  transparent 100%);
+    background-blend-mode: multiply;
+}
+
+.our-servis-items-text-flex {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 5px 0 10px;
+}
+
+.number {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.our-servis-items-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 80%;
+}
+
+.extra-icon-arrow {
+    width: 20%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .inner-container {
+        padding: 0 40px;
+    } 
+
+    .nav-items {
+        font-size: 18px;
+    }
+
+
+ 
+}
+
+@media (max-width: 768px) {
+
+    .inner-container {
+        padding: 0 20px;
+    } 
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+        max-width: 100%;
+    }
+
+    .inner-container {
+        padding: 0 5px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    
+    nav {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .nav-items {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }    
+}
+
