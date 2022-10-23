@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;   
+}
+
+:root {
+    
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    --primary-color: 
+}
+
+.inner-container {
+    max-width: 1024px;
+    margin: 0 auto; 
+}
+
+header {
+    background-color: #0284C7;
+}
+
+.header-flex {
+    padding: 15px 0;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav {
+    gap: 40px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-items {
+    width: calc(100%/5);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-items:hover {
+    color: #e0f2fe;
+}
+
+.title-text {
+    font-size: 26px;
+    font-weight: 700;  
+}
+
+.hero {
+    background-image: url(picture/hero.png);
+    background-size: cover;
+    background-position: center top;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    max-width: calc(100%/2);
+    padding: 150px 0 50px;
+}
+
+.hero-text {
+    max-width: calc(100%/2);
+    font-size: 16px;
+    font-weight: 400;
+    color: #0C4A6E;
+    line-height: 18px;
+}
+
+.span-blue {
+    color: #0284C7;
+}
+
+.span-green {
+    color: #26992A;
+}
+
+.submit {
+    height: 51.69px;
+    width: 242.93px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #F0F9FF;
+    background-color: #0284C7;
+    border: none;
+    border-radius: 8px;
+    margin: 50px 0;
+    padding: 16px 32px;
+    box-shadow: 2px 2px 5px #737373;
+
+    transition: all 500ms linear;
+}
+
+.submit:hover {
+    background-color:#0369a1;
+    transform: scale(1.02);    
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align:left; 
+    color: #0369a1;
+    padding: 90px 0 50px;
+}
+
+.caries-container {
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 50px;
+
+}
+
+.caries-text {
+    width: 60%;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 500;
+    color: #075985;
+    padding-right: 30px;
+    line-height: 27px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caries-picture {
+    width: 40%;
+    background-image: url(picture/patient.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.general-titles {
+    color: #0369A1;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;  
+    padding: 50px 0;
+}
+
+.price-caries-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 50px;
+}
+
+.price-caries-item {
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 15px;
+    color: #075985; 
+    padding: 20px 40px;  
+    width: 100%;
+    line-height: 25px;
+
+    transition: all 500ms linear;
+}
+
+.price-caries-item:hover {
+    transform: scale(1.02);
+}
+
+.price-caries-item_light-blue {
+    background-color: #F0F9FF;
+
+}
+
+.price-caries-item_dark-blue {
+    background-color: #E0F2FE;
+}
+
+.other-servis-scroll-container {
+    background-color: #0284C7;
+}
+
+.icon-arrow {
+    height: 80px;
+    width: 50px;
+    font-size: 40px;
+}
+
+.other-servise-flex {
+    padding: 60px 0 30px;
+    gap: 10px;
+    max-width: 100%;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+}
+
+.other-servis-items {
+    color: white;
+    gap: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.servis-dental {
+    width: calc(100%/3 - 60px);
+    height: 150px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #404040;
+    background-image: linear-gradient(to right, #0ea4e97d 10%, transparent 60%), url(picture/service-1.png);
+}
+
+.servis-prosthetics {
+    width: calc(100%/3 - 60px);
+    height: 150px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #404040;
+    background-image: linear-gradient(to right, #0ea4e97d 10%, transparent 60%), url(picture/service-2.png);
+}
+
+.servis-cleaning {
+    width: calc(100%/3 - 60px);
+    height: 150px;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #404040;
+    background-image: linear-gradient(to right, #0ea4e97d 10%, transparent 60%), url(picture/service-3.png);   
+}
+
+.other-servis-items-text-flex {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 5px 0 10px;
+}
+
+.number {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.other-servis-items-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 75%;
+}
+
+.extra-icon-arrow {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    background-color: #f0f9ff;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-text {
+    max-width: calc(100%/2);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #075985;
+    padding: 40px 0px;
+}
+
+.info-social-text {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #075985;
+    padding: 40px 5px;
+}
+
+.info-social-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: calc(100%/2);
+}
+    
+.icon-facebook {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+
+    transition: all 500ms linear;
+}
+
+.icon-facebook:hover {
+    transform: scale(1.1);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #075985;
+}
+
+.contacts-items-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.mail-text {
+    font-weight: 300;
+}
+
+.extra-weight {
+    font-weight: 700;
+}
+
+.location-icon-small {
+    height: 15px;
+    margin: auto 5px auto 0;
+}
+
+.phone-icon {
+    width: 15px;
+    margin: auto 5px auto 0;
+}
+
+.email-icon {
+    width: 15px;
+    height: 16px;
+    margin: auto 5px auto 0;
+}
+
+.legal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #075985;
+    padding: 40px 0;
+}
+
+.legal-container {
+    border-right: 2px solid #075985;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .inner-container {
+        padding: 0 40px;
+    } 
+
+    .nav-items {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .inner-container {
+        padding: 0 20px;
+    } 
+
+    .other-servis-items-text {
+        font-size: 9px;
+        line-height: 15px;
+        width: 80%;
+    }
+    
+    .extra-icon-arrow {
+        width: 20px;
+        height: 20px;
+        max-width: 20%;
+    }
+    
+    .other-servis-items-text-flex {
+        justify-content: space-between;
+    }
+
+    .other-servise-flex {
+        padding: 0;
+    }
+
+    .info-social-text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .info-text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .contacts-container {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .legal {
+        font-size: 12px;
+    }
+
+    .legal-container {
+        border-right: 1.5px solid #075985;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+        max-width: 90%;
+    }
+
+    .inner-container {
+        padding: 0 10px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav-items {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }   
+    
+    .caries-container {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .caries-text {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .caries-picture {
+        width: 100%;
+        height: 500px;
+    }
+
+    .other-branches-contaiter {
+        width: 60%;
+    }
+
+    .other-branches-contaiters {
+        flex-direction: column;
+    }
+
+    .other-servis-items {
+        flex-direction: column;
+    }
+
+    .servis-dental {
+        width: 100%;
+    }
+
+    .servis-prosthetics {
+        width: 100%;
+    }
+
+    .servis-cleaning {
+        width: 100%;
+    }
+
+    .general-titles {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 414px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    .header-flex {
+        align-items: stretch;
+    }
+
+    .general-titles {
+        font-size: 30px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contacts-container {
+        gap: 5px;
+    }
+
+    .caries-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .caries-picture {
+        height: 300px;
+    }
+
+    .price-caries-container {
+        margin-bottom: 0;
+    }
+
+}
