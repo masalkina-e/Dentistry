@@ -2,13 +2,12 @@
     box-sizing: border-box;   
 }
 
-:root {
-    
-}
-
 html {
     font-family: 'Open Sans', sans-serif;
-    --primary-color: 
+    --primary-color-main-blue: #0284C7;
+    --primary-color-main-text-white: #ffffff;
+    --primary-color-main-text-dark-blue: #075985;
+    --primary-color-main-text-light-blue: #0369a1;
 }
 
 .inner-container {
@@ -17,12 +16,12 @@ html {
 }
 
 header {
-    background-color: #0284C7;
+    background-color: var(--primary-color-main-blue);
 }
 
 .header-flex {
     padding: 15px 0;
-    color: #ffffff;
+    color: var(--primary-color-main-text-white);
 
     display: flex;
     flex-direction: row;
@@ -40,7 +39,7 @@ nav {
 
 .nav-items {
     width: calc(100%/5);
-    color: #ffffff;
+    color: var(--primary-color-main-text-white);
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -77,7 +76,7 @@ h1 {
 }
 
 .span-blue {
-    color: #0284C7;
+    color: var(--primary-color-main-blue);
 }
 
 .span-green {
@@ -90,7 +89,7 @@ h1 {
     font-size: 18px;
     font-weight: 700;
     color: #F0F9FF;
-    background-color: #0284C7;
+    background-color: var(--primary-color-main-blue);
     border: none;
     border-radius: 8px;
     margin: 50px 0;
@@ -101,7 +100,7 @@ h1 {
 }
 
 .submit:hover {
-    background-color:#0369a1;
+    background-color: var(--primary-color-main-text-light-blue);
     transform: scale(1.02);    
 }
 
@@ -109,7 +108,7 @@ h2 {
     font-size: 45px;
     font-weight: 700;
     text-align:left; 
-    color: #0369a1;
+    color: var(--primary-color-main-text-light-blue);
     padding: 90px 0 50px;
 }
 
@@ -126,7 +125,7 @@ h2 {
     font-size: 18px;
     text-align: justify;
     font-weight: 500;
-    color: #075985;
+    color: var(--primary-color-main-text-dark-blue);
     padding-right: 30px;
     line-height: 27px;
 
@@ -144,7 +143,7 @@ h2 {
 }
 
 .general-titles {
-    color: #0369A1;
+    color: var(--primary-color-main-text-light-blue);
     font-size: 40px;
     font-weight: 700;
     text-align: center;  
@@ -163,7 +162,7 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     border-radius: 15px;
-    color: #075985; 
+    color: var(--primary-color-main-text-dark-blue); 
     padding: 20px 40px;  
     width: 100%;
     line-height: 25px;
@@ -185,7 +184,7 @@ h2 {
 }
 
 .other-servis-scroll-container {
-    background-color: #0284C7;
+    background-color: var(--primary-color-main-blue);
 }
 
 .icon-arrow {
@@ -207,7 +206,7 @@ h2 {
 }
 
 .other-servis-items {
-    color: white;
+    color: var(--primary-color-main-text-white);
     gap: 50px;
     
     display: flex;
@@ -223,6 +222,7 @@ h2 {
     border-radius: 20px;
     box-shadow: 2px 2px 4px #404040;
     background-image: linear-gradient(to right, #0ea4e97d 10%, transparent 60%), url(picture/service-1.png);
+    margin: 5px 0;
 }
 
 .servis-prosthetics {
@@ -233,6 +233,7 @@ h2 {
     border-radius: 20px;
     box-shadow: 2px 2px 4px #404040;
     background-image: linear-gradient(to right, #0ea4e97d 10%, transparent 60%), url(picture/service-2.png);
+    margin: 5px 0;
 }
 
 .servis-cleaning {
@@ -242,7 +243,8 @@ h2 {
     background-position: center top;
     border-radius: 20px;
     box-shadow: 2px 2px 4px #404040;
-    background-image: linear-gradient(to right, #0ea4e97d 10%, transparent 60%), url(picture/service-3.png);   
+    background-image: linear-gradient(to right, #0ea4e97d 10%, transparent 60%), url(picture/service-3.png); 
+    margin: 5px 0;  
 }
 
 .other-servis-items-text-flex {
@@ -259,9 +261,9 @@ h2 {
 }
 
 .other-servis-items-text {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 15px;
     width: 75%;
 }
 
@@ -290,7 +292,7 @@ footer {
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
-    color: #075985;
+    color: var(--primary-color-main-text-dark-blue);
     padding: 40px 0px;
 }
 
@@ -298,7 +300,7 @@ footer {
     font-size: 15px;
     line-height: 20px;
     font-weight: 700;
-    color: #075985;
+    color: var(--primary-color-main-text-dark-blue);
     padding: 40px 5px;
 }
 
@@ -336,7 +338,7 @@ footer {
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
-    color: #075985;
+    color: var(--primary-color-main-text-dark-blue);
 }
 
 .contacts-items-flex {
@@ -376,12 +378,12 @@ footer {
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
-    color: #075985;
+    color: var(--primary-color-main-text-dark-blue);
     padding: 40px 0;
 }
 
 .legal-container {
-    border-right: 2px solid #075985;
+    border-right: 2px solid var(--primary-color-main-text-dark-blue);
     padding-right: 5px;
     margin-right: 5px;
 }
@@ -445,9 +447,8 @@ footer {
     }
 
     .legal-container {
-        border-right: 1.5px solid #075985;
+        border-right: 1.5px solid var(--primary-color-main-text-dark-blue);
     }
-
 }
 
 @media (max-width: 600px) {
@@ -506,20 +507,42 @@ footer {
         flex-direction: column;
     }
 
-    .other-servis-items {
-        flex-direction: column;
+    .icon-arrow {
+        display: none;
     }
 
     .servis-dental {
         width: 100%;
+        height: 270px;
+        margin: 50px 15px;
+        overflow: scroll;
+    }
+
+    .number {
+        font-size: 50px;
+        padding: 40px;
+    }
+
+    .extra-icon-arrow {
+        width: 60px;
+        height: 60px;
+        max-width: 40%;
+        margin-right: 40px;
+    }
+
+    .other-servis-items-text {
+        font-size: 20px;
+        line-height: 30px;
+        width: 60%;
+        padding-left: 30px;
     }
 
     .servis-prosthetics {
-        width: 100%;
+        display: none;
     }
 
     .servis-cleaning {
-        width: 100%;
+        display: none;
     }
 
     .general-titles {
@@ -530,7 +553,6 @@ footer {
         font-size: 35px;
         text-align: center;
     }
-
 }
 
 @media (max-width: 414px) {
@@ -568,5 +590,4 @@ footer {
     .price-caries-container {
         margin-bottom: 0;
     }
-
 }
