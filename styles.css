@@ -94,6 +94,7 @@ span {
     margin: 50px 0;
     padding: 16px 32px;
     box-shadow: 2px 2px 5px #737373;
+    cursor: pointer;
 
     transition: all 500ms linear;
 }
@@ -246,15 +247,15 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 
     gap: 20px;
 }
 
 .your-reviews-items {
-    width: calc(100%/2);
+    width: calc(100%/2 - 10px);
     border: 1px solid #e5e5e5;
     border-radius: 10px;
-    margin: 10px 0px;
     box-shadow: 1px 1px 2px #d4d4d4;
 
     display: flex;
@@ -575,12 +576,17 @@ footer {
         display: none;
     }
 
+    .our-servis-items {
+        overflow-x: scroll;
+        justify-content: unset;
+    }
+
     .servis-dental {
-        width: 100%;
+        width: 90%;
         height: 270px;
         margin: 50px 15px;
-        overflow: scroll;
-    }
+        flex-shrink: 0;
+    } 
 
     .number {
         font-size: 50px;
@@ -602,11 +608,17 @@ footer {
     }
 
     .servis-prosthetics {
-        display: none;
+        width: 90%;
+        height: 270px;
+        margin: 50px 15px;
+        flex-shrink: 0;
     }
 
     .servis-cleaning {
-        display: none;
+        width: 90%;
+        height: 270px;
+        margin: 50px 15px;
+        flex-shrink: 0;
     }
 }
 
@@ -635,5 +647,9 @@ footer {
 
     .contacts-container {
         gap: 5px;
+    }
+
+    h1 {
+        font-size: 25px;
     }
 }
