@@ -17,8 +17,10 @@ html {
 
 header {
     background-color: var(--primary-color-main-blue);
-    box-shadow: 1px 1px 5px;
-    z-index:auto;
+}
+
+.header-for-mobile {
+    display: none;
 }
 
 .header-flex {
@@ -521,6 +523,42 @@ footer {
 
 @media (max-width: 600px) {
 
+    header {
+        display: none;
+    }
+
+    .header-for-mobile {
+        display: flex;
+        color: white;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        background-color: var(--primary-color-main-blue);
+        position: relative;
+    }
+
+    .button-bars {
+        background-color: var(--primary-color-main-blue);
+        border: none;
+    }
+    
+    .icon-bars {
+        width: 50px;
+        color: #737373;
+    }
+
+    .mobil-menu {
+        display: none;
+
+        flex-direction: column;
+        background-color: var(--primary-color-main-blue);
+        position: absolute;
+        top: 53px;
+        right: 0;
+    }
+
     h1 {
         font-size: 30px;
         max-width: 90%;
@@ -542,14 +580,14 @@ footer {
 
     .nav-items {
         width: 100%;
-        font-size: 13px;
+        font-size: 20px;
+        padding: 15px 40px;
+        border-bottom: 1px solid;
     }
 
     .header-flex {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }   
+        padding: 0;
+    }    
     
     .our-branches-contaiter {
         width: 60%;
@@ -561,7 +599,6 @@ footer {
 
     .your-reviews-container {
         flex-direction: column;
-        gap: 0;
     }
 
     .your-reviews-container {
@@ -626,10 +663,6 @@ footer {
 
     nav {
         gap: 10px;
-    }
-
-    .header-flex {
-        align-items: stretch;
     }
 
     .your-reviews-items {
