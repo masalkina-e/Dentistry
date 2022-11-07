@@ -12,4 +12,4 @@ function OpenMenu() {
         mobilMenu.style.display = "flex"
         isOpen = true
     }
-    }
+}
