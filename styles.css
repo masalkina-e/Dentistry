@@ -546,7 +546,13 @@ footer {
     
     .icon-bars {
         width: 50px;
-        color: #737373;
+    }
+
+    .icon-close {
+        width: 35px;
+        margin: 5px 0;
+        
+        display: none;
     }
 
     .mobil-menu {
@@ -555,7 +561,7 @@ footer {
         flex-direction: column;
         background-color: var(--primary-color-main-blue);
         position: absolute;
-        top: 53px;
+        top: 47px;
         right: 0;
     }
 
